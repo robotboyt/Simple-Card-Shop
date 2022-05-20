@@ -1,0 +1,160 @@
+.overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal {
+    width: 384px;
+    height: 536px;
+    background: #FFFFFF;
+}
+
+
+.close-modal {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-left: 360px;
+    margin-top: -10px;
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
+
+
+.close-modal span {
+    font-size: 30px;
+}
+
+.modal-description .name {
+    font-weight: 400;
+    font-size: 40px;    
+    line-height: 48px;  
+    letter-spacing: -0.02em ;
+    margin: 0px;
+}
+
+.modal-price-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-price-block span {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+    margin-bottom: 30px;
+}
+
+.modal-price-block p {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.modal-form {
+    width: 100%;
+}
+
+.modal-form input  {
+    width: 288px;
+    height: 56px;
+    border-radius: 16px;
+    margin: 10px;
+    border: 1px solid grey;
+}
+
+.modal-form input:focus {
+    outline: none;
+    border: 1px solid #4BCFA0;
+}
+
+.modal-btn {
+    width: 288px;
+    height: 56px;
+    background: #4BCFA0;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 0px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: .3s ease-in-out;
+}
+
+.error {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #E43F3F;
+    width: 288px;
+    text-align: left;
+    margin-left: 47px;
+}
+
+.cross {
+    position: absolute;
+    background: #E43F3F;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    font-size:20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-left: -40px;
+    margin-top: 28px;
+    cursor: pointer;
+}
+
+
+@media(max-width: 400px) {
+    .modal {
+        width: 320px;
+        height: 500px;
+    }
+
+
+    .close-modal {
+        border-radius: 100%;
+        margin-left: 300px;
+        margin-top: -10px;
+    }
+}
+
+@media(max-width: 350px) {
+    .modal {
+        width: 300px;
+        height: 520px;
+    }
+
+
+    .close-modal {
+        border-radius: 100%;
+        margin-left: 280px;
+        margin-top: -10px;
+    }
+
+    .modal-form input  {
+        width: 250px;
+    }
+}
+
+
+

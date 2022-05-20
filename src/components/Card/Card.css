@@ -1,0 +1,152 @@
+.card {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 352px;
+    height: 256px;
+    background-color: #FFFFFF;
+    box-shadow: 24px 24px 40px rgba(75, 207, 160, 0.08);
+    border-radius: 24px;
+    padding: 32px;
+    gap: 40px;
+    box-shadow: 24px 24px 40px rgba(75, 207, 160, 0.08);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about h2 {
+    margin-top: 0px;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+}
+
+
+.blockPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -32px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price span {
+    display: flex;
+    align-items: flex-start;
+}
+
+.blockPrice button {
+    margin-left: 130px;
+    width: 64px;
+    height: 56px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4BCFA0;
+    border-radius: 16px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgb(197, 197, 197);
+    cursor: pointer;
+}
+
+.blockPrice button:hover {
+    background-color: #4BCFA0;
+    color: #FFFFFF;
+    border: 0px;
+}
+
+.blockPrice span {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+}
+
+.blockPrice h1 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+}
+
+.card .category {
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: grey;
+}
+
+@media(max-width: 1366px) {
+    .card {
+        width: 500px;
+    }
+
+    .blockPrice button {
+        width: 100px;
+    }
+}
+
+@media(max-width: 786px) {
+    .card {
+        max-width: 360px;
+    }
+
+    .blockPrice button {
+        width: 100px;
+    }
+}
+
+
+
+@media(max-width: 444px) {
+    .card {
+        max-width: 300px;
+        height: 320px;
+    }
+    
+    .blockPrice {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blockPrice button  {
+        width: 200px;
+        margin-left: 0px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 382px) {
+    .card {
+        width: 250px;
+    }
+}
+
+@media(max-width: 320px) {
+    .card {
+        width: 220px;
+    }
+}
+
+
