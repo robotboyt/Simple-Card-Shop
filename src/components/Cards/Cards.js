@@ -39,7 +39,7 @@ const Cards = () => {
                 ))}
             </div>
            <button className='cheapest' onClick={toggleModal}>Buy cheapest</button>
-           {modalOpen ? <Modal toggleModal={toggleModal} name={lowPrice[0].name} category={lowPrice[0].category} price={lowPrice[0].price} /> : null}
+           {modalOpen ? <Modal toggleModal={toggleModal} name={lowPrice[0].name} category={lowPrice[0].category} price={lowPrice[0].price} setModalOpen={setModalOpen} /> : null}
         </div>
     );
 };

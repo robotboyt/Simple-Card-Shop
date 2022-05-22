@@ -3,7 +3,7 @@ import './Modal.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-const Modal = ({toggleModal, name, category, price, activeClass}) => {
+const Modal = ({toggleModal, name, category, price}) => {
     const [show, setShow] = useState(false)
     const [inputName, setInputName] = useState('')
     const [inputNumber, setInputNumber] = useState('')
